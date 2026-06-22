@@ -1,5 +1,5 @@
 <ul class="sidebar-nav">
-  {% if user.is_authenticated%}
+  {% if user.is_authenticated %}
     <li><a href="{% url "taxi:driver-detail" pk=user.id %}">User: {{ user.username }} </a></li>
     <li>
       <form action="{% url 'logout' %}" method="post" style="display: inline;">
